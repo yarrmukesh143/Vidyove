@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Vidyove</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="./img1/Untitled design (5).jpg" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            margin: 50px auto;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .image-container {
+            width: 50%;
+        }
+        
+        .image-container img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                width: 90%;
+            }
+            .image-container {
+                width: 100%;
+            }
+            .content {
+                width: 10%;
+            }
+            .image-container img {
+                height: 250px;
+            }
+        }
+        
+        .contain {
+            display: flex;
+            gap: 40px;
+            width: 100%;
+        }
+        
+        .box {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .box p {
+            color: #555;
+        }
+        /* Hover Effect */
+        
+        .box:hover {
+            background-color: #3498db;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .box:hover p {
+            color: white;
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+        
+        .top-bar {
+            background-color: blue;
+            /* Green background */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+        }
+        
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .top-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .top-bar a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <div class="top-bar">
+        <div>Mobile:
+            <a href="tel:+91 8588022168">+91 8588022168</a>
+        </div>
+        <div>
+            Email: <a href="mailto:ceo@vidyove.online">info@vidyove.online</a>
+        </div>
+    </div>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="./img1/logovidove-removebg-preview.png" alt="" height="150px" width="auto">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a
+                    >
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Study Destination</a
+                        >
+                        <div class="dropdown-menu fade-down m-0">
+                            <a href="Australia.html" class="dropdown-item">Study in Australia</a>
+                    <a href="canada.html" class="dropdown-item">Study in Canada</a>
+                    <a href="Europe.html" class="dropdown-item">Study in Europe</a>
+                    <a href="england.html" class="dropdown-item">Study in The United Kingdom</a>
+                    <a href=" USA.html" class="dropdown-item">Study in USA</a>
+                    <a href="Dubai.html" class="dropdown-item">Study in Dubai</a>
+                    <a href="singapore.html" class="dropdown-item">Study in Singapore</a>
+                    <a href="Newzealand.html" class="dropdown-item">Study in New Zealand</a>
+                </div>
+            </div>
+
+            <a href="contact.html" class="nav-item nav-link">Contact-us</a
+                    >
+                </div>
+                <a
+                    href="contact.html"
+                    class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
+                    >Enquiry  Now<i class="fa fa-arrow-right ms-3"></i
+                ></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header" style="
+                background: linear-gradient(
+                        rgba(24, 29, 56, 0.2),
+                        rgba(2, 29, 56, 0.2)
+                    ),
+                    url(./img/australiaaa.jpg);
+            ">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">
+                        Study in Australia
+                    </h1>
+                    <nav aria-label="breadcrumb">
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- About Start -->
+
+    <div class="container-xxl py-5 ">
+        <div class="container ">
+            <div class="row g-5 ">
+
+                <div class="col-lg-6 wow fadeInUp " data-wow-delay="0.3s ">
+                    <h6 class="section-title bg-white text-start text-primary pe-3 ">About</h6>
+                    <h1 class="mb-4 ">Study in Australia</h1>
+                    <p class="mb-4 ">Australia's education system is highly regarded globally for its emphasis on quality, inclusivity, and innovation. The system is structured into primary, secondary, and tertiary levels, with compulsory education spanning from ages
+                        6 to 16, ensuring a strong foundation for all students. Australian education values critical thinking, creativity, and practical skills, preparing students to thrive in a rapidly changing world. The curriculum is designed to be
+                        flexible, catering to diverse learning needs and fostering individual talents.</p>
+                    <p class="mb-4 ">At the tertiary level, Australia is home to world-class universities and vocational education and training (VET) institutions, offering a wide range of programs that align with industry demands. The country places a strong emphasis
+                        on research and innovation, attracting international students and scholars. Additionally, Australia’s education system promotes multiculturalism and inclusivity, reflecting its diverse society.</p>
+                    <div class="row gy-2 gx-4 mb-4 ">
+                        <div class="col-sm-6 ">
+                            <p class="mb-0 "><i class="fa fa-arrow-right text-primary me-2 "></i>World-class education system</p>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <p class="mb-0 "><i class="fa fa-arrow-right text-primary me-2 "></i>Flexible study programs</p>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <p class="mb-0 "><i class="fa fa-arrow-right text-primary me-2 "></i>Internship opportunities provided</p>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <p class="mb-0 "><i class="fa fa-arrow-right text-primary me-2 "></i>English-speaking environment</p>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <p class="mb-0 "><i class="fa fa-arrow-right text-primary me-2 "></i>Affordable tuition fees</p>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <p class="mb-0 "><i class="fa fa-arrow-right text-primary me-2 "></i> Career Growth & Job Opportunities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp " data-wow-delay="0.1s " style="min-height: 400px; ">
+                    <div class="position-relative h-100 ">
+                        <img class="img-fluid position-absolute w-100 h-100 " src=" img\austr.jpg" alt=" " style="object-fit: cover; ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5 ">
+        <div class="container ">
+            <div class="text-center wow fadeInUp " data-wow-delay="0.1s ">
+                <h6 class="section-title bg-white text-center text-primary px-3 ">
+                    Universities
+                </h6>
+                <h1 class="mb-5 ">Universities in Australia</h1>
+            </div>
+            <div class="row g-4 justify-content-center ">
+                <div class="col-lg-4 col-md-6 wow fadeInUp " data-wow-delay="0.1s ">
+                    <div class="course-item bg-light ">
+                        <div class="position-relative overflow-hidden ">
+                            <img class="img-fluid " src="./img1/western.jpg" alt=" " />
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4 ">
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0 ">
+
+                            <h3 class="mb-4 ">The University Of Western Australia 🎓</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp " data-wow-delay="0.3s ">
+                    <div class="course-item bg-light ">
+                        <div class="position-relative overflow-hidden ">
+                            <img class="img-fluid " src="./img1/um.jpg " alt=" " />
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4 ">
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0 ">
+                            <div class="mb-3 ">
+
+                            </div>
+                            <h3 class="mb-4 "> University of Melbourne – Melbourne 🏛️</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp " data-wow-delay="0.5s ">
+                    <div class="course-item bg-light ">
+                        <div class="position-relative overflow-hidden ">
+                            <img class="img-fluid " src="./img1/macsquare.jpg " alt=" " />
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4 ">
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0 ">
+                            <div class="mb-3 ">
+
+                            </div>
+                            <h3 class="mb-4 ">Macquarie University🌆</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center ">
+                <div class="col-lg-4 col-md-6 wow fadeInUp " data-wow-delay="0.1s ">
+                    <div class="course-item bg-light ">
+                        <div class="position-relative overflow-hidden ">
+                            <img class="img-fluid " src="./img1/queen.jpg " alt=" " />
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4 ">
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0 ">
+
+                            <h3 class="mb-4 ">University of Queensland – Brisbane 🌿</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp " data-wow-delay="0.3s ">
+                    <div class="course-item bg-light ">
+                        <div class="position-relative overflow-hidden ">
+                            <img class="img-fluid " src="./img1/sydny.jpg" alt=" " />
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4 ">
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0 ">
+                            <div class="mb-3 ">
+
+                            </div>
+                            <h3 class="mb-4 "> University of New South Wales – Sydney 📚</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp " data-wow-delay="0.5s ">
+                    <div class="course-item bg-light ">
+                        <div class="position-relative overflow-hidden ">
+                            <img class="img-fluid " src="./img1/uot.jpg" alt=" " />
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4 ">
+
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0 ">
+                            <div class="mb-3 ">
+
+                            </div>
+                            <h3 class="mb-4 ">University of Technology Sydney – Sydney 🔬</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+    <div class="text-center wow fadeInUp " data-wow-delay="0.1s ">
+        <h6 class="section-title bg-white text-center text-primary px-3 ">
+            Tailor Made Services
+        </h6>
+        <h1 class="mb-5 ">Tailor Made Services</h1>
+    </div>
+    <div class="image-section111">
+        <picture>
+
+            <source media="(max-width: 768px)" srcset="./img1/Student.jpg">
+            <img src="./img1/Student.jpg" alt="Responsive Image">
+        </picture>
+
+    </div>
+
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5 ">
+        <div class="container ">
+            <div class="text-center wow fadeInUp " data-wow-delay="0.1s ">
+                <h6 class="section-title bg-white text-center text-primary px-3 ">
+                    Study in Australia
+                </h6>
+                <h1 class="mb-5 ">Why Study in Australia?</h1>
+            </div>
+
+
+            <!-- Service Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item text-center pt-3">
+                                <div class="p-4">
+
+                                    <h5 class="mb-3 ">Top-Quality Education</h5>
+                                    <p>
+                                        Australia has 40+ globally ranked universities.
+                                    </p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp " data-wow-delay="0.3s ">
+                            <div class="service-item text-center pt-3 ">
+                                <div class="p-4 ">
+
+                                    <h5 class="mb-3 ">Diverse Programs</h5>
+                                    <p>
+                                        Choose from 1000+ courses across all fields of study.
+                                    </p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp " data-wow-delay="0.5s ">
+                            <div class="service-item text-center pt-3 ">
+                                <div class="p-4 ">
+
+                                    <h5 class="mb-3 ">Strong Job Opportunities</h5>
+                                    <p>
+                                        Access Australia’s booming industries and post-study work rights.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp " data-wow-delay="0.7s ">
+                            <div class="service-item text-center pt-3 ">
+                                <div class="p-4 ">
+
+                                    <h5 class="mb-3 ">Global Student Hub</h5>
+                                    <p>
+                                        Join 700,000+ international students studying in Australia annually.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+
+
+            <!-- Service Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item text-center pt-3">
+                                <div class="p-4">
+
+                                    <h5 class="mb-3 ">Scholarships & Financial Aid 🎓💰</h5>
+                                    <p>
+                                        Many universities offer scholarships for international students.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp " data-wow-delay="0.3s ">
+                            <div class="service-item text-center pt-3 ">
+                                <div class="p-4 ">
+
+                                    <h5 class="mb-3 "> Research & Innovation </h5>
+                                    <p>
+                                        Australia invests heavily in research, making it a hub for scientific and technological advancements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp " data-wow-delay="0.5s ">
+                            <div class="service-item text-center pt-3 ">
+                                <div class="p-4 ">
+
+                                    <h5 class="mb-3 ">Work While Studying 💵 </h5>
+                                    <p>
+                                        Students can work up to 48 hours per fortnight during the semester.
+
+                                    </p>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp " data-wow-delay="0.7s ">
+                            <div class="service-item text-center pt-3 ">
+                                <div class="p-4 ">
+
+                                    <h5 class="mb-3 ">Pathway to Permanent Residency 🏠 </h5>
+                                    <p>
+                                        Various visa options allow students to stay after graduation.
+                                    </p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Team End -->
+
+
+
+
+
+
+    <!-- Form Start -->
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="row w-100">
+            <!-- Form Section (Left side) -->
+            <div class="col-lg-6 col-md-12">
+                <div class="wow fadeInUp text-center" data-wow-delay="0.5s">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
+                    <h1 class="mb-5">Contact For Any Query</h1>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <a href="mailto:ceo@vidyove.online" class="btn btn-primary w-100 py-3">Send Message</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Image Section (Right side) -->
+            <div class="col-lg-6 col-md-12">
+                <img src="./img1/contactus.jpg" alt="Contact Image" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+    <!-- Form End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href=" USA.html">Study in USA</a>
+                    <a class="btn btn-link" href="Dubai.html">Study in Dubai</a>
+                    <a class="btn btn-link" href="england.html">Study in The  United Kingdom</a>
+                    <a class="btn btn-link" href="canada.html">Study in Canada</a>
+                    <a class="btn btn-link" href="singapore.html">Study in Singapore</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>1712 A-1, 2nd Floor, near Gorakhpur police station, Gorakhpur, Jabalpur, Madhya Pradesh Pin-482001
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>+91 8588022168
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>info@vidyove.online
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i
+                            ></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i
+                            ></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i
+                            ></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i
+                            ></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="" />
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>
+                        "Unlock Global Opportunities! 🌍🎓 Explore world-class education, top universities, and exciting career prospects by studying abroad"
+                    </p>
+                    <div class="position-relative mx-auto" style="max-width: 400px">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                                SignUp
+                            </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                &copy;
+                                <a class="border-bottom " href="https://mukeshprajapati-muku001.netlify.app/">Mukesh Parjapati</a>, All Right Reserved.
+
+                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can
+                    purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->Designed By
+                                <a class="border-bottom" href="https://mukeshprajapati-muku001.netlify.app/">Mukesh Parjapati</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="# " class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i
+        ></a>
+
+                                <!-- JavaScript Libraries -->
+                                <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js "></script>
+                                <script src="lib/wow/wow.min.js "></script>
+                                <script src="lib/easing/easing.min.js "></script>
+                                <script src="lib/waypoints/waypoints.min.js "></script>
+                                <script src="lib/owlcarousel/owl.carousel.min.js "></script>
+
+                                <!-- Template Javascript -->
+                                <script src="js/main.js "></script>
+</body>
+
+</html>
+<script src="lib/easing/easing.min.js "></script>
+<script src="lib/waypoints/waypoints.min.js "></script>
+<script src="lib/owlcarousel/owl.carousel.min.js "></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js "></script>
+</body>
+
+</html>
